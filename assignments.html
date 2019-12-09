@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assignments</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    
+
+</head>
+<body>
+    <div class="container">
+    <h1>Assignments</h1>
+    <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">Title</th>
+            <th scope="col">Description</th>
+            <th scope="col">Submission Date</th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">CB8 - Java - Project 1</th>
+            <td>Create an HTML table</td>
+            <td>01-09-2019</td>
+            <td><a href="edit-assignment.html">
+                <img src="images\edit.png" alt="Edit Assignment" style="width:20px;height:20px;border:0;">
+              </a></td>
+            <td><a href="update-assignment.html">
+                <img src="images\update.png" alt="Update Assignment" style="width:20px;height:20px;border:0;">
+              </a></td>
+          </tr>
+          <tr>
+              <th scope="row">CB8 - C# - Project 1</th>
+              <td>Create a MySQL Database</td>
+              <td>01-09-2019</td>
+              <td><a href="edit-assignment.html">
+                  <img src="images\edit.png" alt="Edit Assignment" style="width:20px;height:20px;border:0;">
+                </a></td>
+              <td><a href="update-assignment.html">
+                  <img src="images\update.png" alt="Update Assignment" style="width:20px;height:20px;border:0;">
+                </a></td>
+            </tr>
+            <tr>
+                <th scope="row">CB8 - Java - Project 2</th>
+                <td>Create a Spring web app</td>
+                <td>01-11-2019</td>
+                <td><a href="edit-assignment.html">
+                    <img src="images\edit.png" alt="Edit Assignment" style="width:20px;height:20px;border:0;">
+                  </a></td>
+                <td><a href="update-assignment.html">
+                    <img src="images\update.png" alt="Update Assignment" style="width:20px;height:20px;border:0;">
+                  </a></td>
+              </tr>
+        </tbody>
+      </table>
+      <br>
+      <form action="assignments.html" id="input-form">
+
+
+          <div class="form-group">
+      <table>
+        <tr>      
+          <td><input type="text" placeholder="Enter Assignment Title" name="assignment_title" maxlength="30" required></td>
+
+          <td><input type="text" placeholder="Enter Assign. Description" name="assignment_description" maxlength="45" required></td>
+    
+          <td><input type="date" id="submission_date"  name="assignment_submission_date" required></td>      
+
+          <td><button type="submit">Add New Assignment</button></td>
+          
+        </tr>
+        <tr id="validation_requirements"> 
+        
+            <td>Max Length: 30</td>
+
+            <td>Max Length: 45</td>
+
+            <td>No past dates</td>
+      
+        </tr>  
+      </table>
+
+        </div>
+      
+      
+      </form>
+
+
+      <br>
+      <br>
+      <br>
+      <div>
+          <a href="index.html" class="active; home-button">Home</a>
+        </div>
+
+    </div>
+    
+</body>
+<script src="js\assignments.js"></script>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Students per Course</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    
+
+</head>
+<body>
+    <div class="container">
+    <h1>Students per Course</h1>
+    <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">Student Full Name</th>
+            <th scope="col">Course Title</th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Kostas Papadopoulos</th>
+            <td>CB8 - Java</td>
+            <td><a href="edit-student-course.html">
+                <img src="images\edit.png" alt="Edit Student-Course" style="width:20px;height:20px;border:0;">
+              </a></td>
+            <td><a href="update-student-course.html">
+                <img src="images\update.png" alt="Update Student-Course" style="width:20px;height:20px;border:0;">
+              </a></td>
+          </tr>
+          <tr>
+              <th scope="row">Antonis Antoniou</th>
+              <td>CB8 - C#</td>
+              <td><a href="edit-student-course.html">
+                  <img src="images\edit.png" alt="Edit Student-Course" style="width:20px;height:20px;border:0;">
+                </a></td>
+              <td><a href="update-student-course.html">
+                  <img src="images\update.png" alt="Update Student-Course" style="width:20px;height:20px;border:0;">
+                </a></td>
+            </tr>
+            <tr>
+                <th scope="row">Periklis Lamprou</th>
+                <td>CB9 - Java</td>
+                <td><a href="edit-student-course.html">
+                    <img src="images\edit.png" alt="Edit Student-Course" style="width:20px;height:20px;border:0;">
+                  </a></td>
+                <td><a href="update-student-course.html">
+                    <img src="images\update.png" alt="Update Student-Course" style="width:20px;height:20px;border:0;">
+                  </a></td>
+              </tr>
+        </tbody>
+      </table>
+      <br>
+      <form action="students-courses.html" id="input-form">
+
+
+          <div class="form-group">
+
+    <table>
+    <tr>   
+          <td>
+              <select name="students" size="1">
+                  <option value="Kostas Papadopoulos">Kostas Papadopoulos</option>
+                  <option value="Antonis Antoniou">Antonis Antoniou</option>
+                  <option value="Periklis Lamprou">Periklis Lamprou</option>
+              </select>
+
+          </td>
+
+          <td>
+              <select name="courses" size="1">
+                  <option value="CB8 - Java">CB8 - Java</option>
+                  <option value="CB8 - C#">CB8 - C#</option>
+                  <option value="CB9 - Java">CB9 - Java</option>
+              </select>
+
+          </td>
+
+          <td><button type="submit">Assign Student to Course</button></td>
+    </tr>
+ 
+      </table>      
+
+
+
+
+        </div>
+      
+      
+      </form>
+
+
+      <br>
+      <br>
+      <br>
+      <div>
+          <a href="index.html" class="active; home-button">Home</a>
+        </div>
+
+    </div>
+    
+</body>
+
+</html>

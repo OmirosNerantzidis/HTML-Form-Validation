@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Students</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    
+
+</head>
+<body>
+    <div class="container">
+    <h1>Students</h1>
+    <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">Date of Birth</th>
+            <th scope="col">Tuition Fees</th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Kostas</th>
+            <td>Papadopoulos</td>
+            <td>07-03-1985</td>
+            <td>1500.50</td>
+            <td><a href="edit-student.html">
+                <img src="images\edit.png" alt="Edit Student" style="width:20px;height:20px;border:0;">
+              </a></td>
+            <td><a href="update-student.html">
+                <img src="images\update.png" alt="Update Student" style="width:20px;height:20px;border:0;">
+              </a></td>
+          </tr>
+          <tr>
+            <th scope="row">Antonis</th>
+            <td>Antoniou</td>
+            <td>07-10-1989</td>
+            <td>2000.50</td>
+            <td><a href="edit-student.html">
+                <img src="images\edit.png" alt="Edit Student" style="width:20px;height:20px;border:0;">
+              </a></td>
+                <td><a href="update-student.html">
+                <img src="images\update.png" alt="Update Student" style="width:20px;height:20px;border:0;">
+              </a></td>
+          </tr>
+          <tr>
+            <th scope="row">Periklis</th>
+            <td>Lamprou</td>
+            <td>23-03-1980</td>
+            <td>3000.50</td>
+            <td><a href="edit-student.html">
+                <img src="images\edit.png" alt="Edit Student" style="width:20px;height:20px;border:0;">
+              </a></td>
+                <td><a href="update-student.html">
+                <img src="images\update.png" alt="Update Student" style="width:20px;height:20px;border:0;">
+              </a></td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <form action="students.html" id="input-form">
+
+
+          <div class="form-group">
+
+          <table>
+           <tr> 
+          
+              <td><input type="text" placeholder="Enter Student first Name" name="student_first_name" maxlength="30" pattern="[a-zA-Z]*" required></td>
+
+              <td><input type="text" placeholder="Enter Student last name" name="student_last_name" maxlength="30" pattern="[a-zA-Z]*" required></td>
+
+              <td><input type="date" id="student_date_of_birth" name="student_date_of_birth" required></td>
+        
+              <td><input type="number" step="0.01" placeholder="Tuition Fees" name="student_tuition_fees" min="0" max="99999.99" required></td>
+
+              <td><button type="submit">Add New Student</button></td>
+        
+          </tr>
+          <tr id="validation_requirements"> 
+          
+              <td>Max Length: 30 / No Numbers</td>
+
+              <td>Max Length: 30 / No Numbers</td>
+
+              <td>18 years ago or more</td>
+        
+              <td>Min: 0.00 / Max: 99999.99</td>
+        
+          </tr>  
+        </table>
+        </div>
+      
+         
+      
+      </form>
+
+
+      <br>
+      <br>
+      <br>
+      <div>
+          <a href="index.html" class="active; home-button">Home</a>
+        </div>
+
+    </div>
+    
+</body>
+<script src="js\students.js"></script>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trainers</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+    <h1>Trainers</h1>
+    <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">Subject</th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Giannis</th>
+            <td>Antetokunbo</td>
+            <td>NBA</td>
+            <td><a href="edit-trainer.html">
+                <img src="images\edit.png" alt="Edit Trainer" style="width:20px;height:20px;border:0;">
+              </a></td>
+            <td><a href="update-trainer.html">
+                <img src="images\update.png" alt="Update Trainer" style="width:20px;height:20px;border:0;">
+              </a></td>
+          </tr>
+          <tr>
+            <th scope="row">Pablo</th>
+            <td>Picasso</td>
+            <td>Painting</td>
+            <td><a href="edit-trainer.html">
+                <img src="images\edit.png" alt="Edit Trainer" style="width:20px;height:20px;border:0;">
+              </a></td>
+            <td><a href="update-trainer.html">
+                <img src="images\update.png" alt="Update Trainer" style="width:20px;height:20px;border:0;">
+              </a></td>
+          </tr>
+          <tr>
+            <th scope="row">Bruce</th>
+            <td>Dickinson</td>
+            <td>Singing</td>
+            <td><a href="edit-trainer.html">
+                <img src="images\edit.png" alt="Edit Trainer" style="width:20px;height:20px;border:0;">
+              </a></td>
+            <td><a href="update-trainer.html">
+                <img src="images\update.png" alt="Update Trainer" style="width:20px;height:20px;border:0;">
+              </a></td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <form action="trainers.html" id="input-form">
+
+
+          <div class="form-group">
+    <table>
+      <tr>        
+          <td><input type="text" placeholder="Enter Trainer first name" name="trainer_title" maxlength="30" pattern="[a-zA-Z]*" required></td>
+
+          <td><input type="text" placeholder="Enter Trainer last name" name="trainer_stream" maxlength="30" pattern="[a-zA-Z]*" required></td>
+    
+          <td><input type="text" placeholder="Enter Trainer subject" name="trainer_type" maxlength="30" required></td>      
+
+          <td><button type="submit">Add New Trainer</button></td>
+          
+        </tr>
+        <tr id="validation_requirements"> 
+        
+            <td>Max Length: 30 / No Numbers</td>
+
+            <td>Max Length: 30 / No Numbers</td>
+
+            <td>Max Length: 30</td>
+
+      
+        </tr>  
+      </table>
+
+
+        </div>
+      
+      
+      </form>
+
+
+      <br>
+      <br>
+      <br>
+      <div>
+          <a href="index.html" class="active; home-button">Home</a>
+        </div>
+      </div>
+
+</body>
+</html>
